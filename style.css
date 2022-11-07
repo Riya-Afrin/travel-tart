@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------Home----------- */
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.30),#440e29), url(.//image/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.home-nav{
+    width: 85%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo{
+    width : 120px;
+    cursor: pointer;
+
+}
+
+.home-nav ul li{
+    list-style: none;
+    display: inline-block;
+   margin: 0 20px;
+   position: relative;
+}
+.home-nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #C4357F;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.home-nav ul li:hover:after{
+    width: 100%;
+}
+
+.home-nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.home-nav ul li a:hover{
+    text-decoration: none;
+    font-size: 20px;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.title h1{
+    color: white;
+    font-size: 100px;
+    font-family: 'Ubuntu';
+}
+.title h1:hover{
+    color: #C4357F;
+    transition: 0.5s;
+}
+.title p{
+    color: rgb(182, 177, 177);
+    font-size: 20px;
+    margin-top: 5px;
+}
+.title p:hover{
+    color: white;
+    transition: 0.5s;
+    font-size: 21px;
+}
+
+/* -----------About US---------- */
+.about-title{
+    text-align: center;
+    margin-top: 55px;
+}
+.about-title h2{
+    font-size: 50px;
+}
+
+.about-title h2 span{
+    color:#C4357F;
+}
